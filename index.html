@@ -1,42 +1,37 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Snake — Joguinho da Cobra</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake — Joguinho da Cobra</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<main class="app">
-<header class="hud">
-<h1>🐍 Jogo da Cobra</h1>
-<div class="scoreboard">
-<div>Pontuação: <span id="score">0</span></div>
-<div>Nível: <span id="level">1</span></div>
-</div>
-</header>
+  <main class="app">
+    <header class="hud">
+      <h1>🐍 Jogo da Cobra</h1>
+      <div class="scoreboard">
+        <div>Pontuação: <span id="score">0</span></div>
+        <div>Nível: <span id="level">1</span></div>
+      </div>
+    </header>
 
+    <section class="game-area">
+      <canvas id="game" width="600" height="600" aria-label="Área do jogo"></canvas>
 
-<section class="game-area">
-<canvas id="game" width="600" height="600" aria-label="Área do jogo"></canvas>
-<div class="overlay" id="overlay">
-<div class="menu">
-<h2 id="overlay-title">Pronto para jogar?</h2>
-<button id="startBtn" class="btn">Começar</button>
-<button id="pauseBtn" class="btn secondary">Pausar</button>
-<p class="hint">Use as setas ou WASD — toque na tela para controlar</p>
-</div>
-</div>
-</section>
+      <div class="overlay" id="overlay">
+        <div class="menu">
+          <h2 id="overlay-title">Pausado</h2>
+        </div>
+      </div>
+    </section>
 
+    <footer class="controls">
+      <div class="instructions">Controles: ← → ↑ ↓ / A D W S — Espaço para pausar</div>
+      <div class="credits">Feito por você — prontinho para o GitHub</div>
+    </footer>
+  </main>
 
-<footer class="controls">
-<div class="instructions">Controles: ← → ↑ ↓ / A D W S — Espaço para pausar</div>
-<div class="credits">Feito por você — prontinho para o GitHub</div>
-</footer>
-</main>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
